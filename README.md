@@ -11,7 +11,7 @@ This project is a fully integrated smart home system built using Arduino. It com
 - 🚨 Security alarm system with buzzer
 - 🚪 Password-protected smart door (servo motor)
 - ⌨️ Keypad-based access control
-- 📟 LCD display support (optional)
+- 📟 LCD display support
 
 ---
 
@@ -40,18 +40,6 @@ This project is a fully integrated smart home system built using Arduino. It com
 - User enters password via keypad
 - Correct password → door opens (servo)
 - Wrong password → access denied
-
----
-
-## 🔌 Pin Configuration (Example)
-
-- PIR → D2  
-- LED → D9  
-- Buzzer → D10  
-- LDR → A0  
-- Servo → D6  
-- Keypad → D4–D12  
-- LCD → A4 (SDA), A5 (SCL)  
 
 ---
 
