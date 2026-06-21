@@ -1,17 +1,17 @@
-# Smart-House
+# 🏠 Smart Home System (Door + Light + Security) using Arduino
 
-# 🏠 Smart Home Security & Lighting System (Arduino)
+This project is a fully integrated smart home system built using Arduino. It combines automatic lighting, motion detection security, and a smart password-controlled door lock.
 
-A simple Arduino-based smart home system that combines motion detection, automatic lighting, and security alarm features.
 ---
 
 ## 🔥 Features
 
-- 💡 Smart automatic light control based on darkness and motion  
-- 🚶 PIR motion detection system  
-- 🚨 Buzzer alarm for intrusion detection  
-- 🌙 Photoresistor-based light sensing  
-- ⚡ Fully simulation-ready in Tinkercad  
+- 💡 Automatic smart lighting (LDR-based)
+- 🚶 Motion detection using PIR sensor
+- 🚨 Security alarm system with buzzer
+- 🚪 Password-protected smart door (servo motor)
+- ⌨️ Keypad-based access control
+- 📟 LCD display support (optional)
 
 ---
 
@@ -19,60 +19,60 @@ A simple Arduino-based smart home system that combines motion detection, automat
 
 - Arduino Uno  
 - PIR Motion Sensor  
-- Photoresistor (LDR)  
-- 10kΩ resistor  
-- LED  
-- 220Ω resistor  
+- Photoresistor (LDR) + 10kΩ resistor  
+- 4×4 Keypad  
+- Servo Motor  
+- LED + 220Ω resistor  
 - Buzzer  
+- I2C LCD (optional)  
 
 ---
 
-## ⚙️ Working Principle
+## ⚙️ How It Works
 
-The system operates in two main modes:
+### 💡 Smart Light
+- Turns ON when it is dark AND motion is detected
 
-### 💡 Smart Light Mode
-- Detects ambient light using LDR  
-- Turns ON LED only when it is dark AND motion is detected  
+### 🚨 Security System
+- Activates buzzer when motion is detected
 
-### 🚨 Security Mode
-- PIR sensor detects motion  
-- Activates buzzer alarm when movement is detected  
-
----
-
-## 🔌 Circuit Overview
-
-- PIR → Digital Pin 2  
-- LED → Digital Pin 9  
-- Buzzer → Digital Pin 10  
-- LDR → Analog Pin A0  
+### 🚪 Smart Door
+- User enters password via keypad
+- Correct password → door opens (servo)
+- Wrong password → access denied
 
 ---
 
-## 💻 Arduino Code
+## 🔌 Pin Configuration (Example)
 
-Upload the main `.ino` file from this repository to your Arduino board or Tinkercad simulation.
+- PIR → D2  
+- LED → D9  
+- Buzzer → D10  
+- LDR → A0  
+- Servo → D6  
+- Keypad → D4–D12  
+- LCD → A4 (SDA), A5 (SCL)  
 
 ---
 
 ## 🚀 Future Improvements
 
-- Add LCD display for system status  
-- Add keypad password security system  
-- Add servo motor door lock  
-- Upgrade to IoT-based remote monitoring  
+- Add IoT control (WiFi module)  
+- Mobile app integration  
+- Camera-based face recognition  
+- SMS alert system  
+- Cloud monitoring dashboard  
 
 ---
 
 ## 📸 Project Status
 
-✔ Completed in Tinkercad simulation  
-✔ Fully functional sensor integration  
-✔ Beginner-friendly smart home prototype  
+✔ Fully integrated smart home system  
+✔ Working in Tinkercad simulation  
+✔ Combines security + automation + access control  
 
 ---
 
 ## 👨‍💻 Author
 
-Developed as a learning project in embedded systems and Arduino programming.
+Arduino Smart Home project developed for embedded systems learning and simulation practice.
